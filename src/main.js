@@ -4,7 +4,7 @@ const categoriesContainer = document.querySelector(".categories-container");
 const resultScore = document.getElementById("result-score");
 /* get data */
 async function getData() {
-  const res = await fetch("./data.json");
+  const res = await fetch("src/data.json");
   const data = await res.json();
   console.log(data);
   drawData(data);
